@@ -25,6 +25,7 @@ let
           rev = "8701c806d5e8f4e2c6f7dea461273482ad89c029";
           ref = "master";
         };
+    eglot = super.eglot.override({ flymake = self.flymake; });
   };
   emacsWithPackages = ((pkgs.emacsPackagesGen myEmacs).overrideScope' overrides).emacsWithPackages (p: with p; [
     p.haskellMode
