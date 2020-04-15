@@ -14,6 +14,7 @@
 ;; if this is the old version of flymake it'll create a foo_flymake*.hs file
 ;; if this is the new version of flymake it'll create a tmp/foo_flymake*.hs file
 
+(message (format "value of flymake-run-in-place: %s" flymake-run-in-place))
+
 ;; debug output to see if the outputs look correct
-(princ (locate-library "flymake"))
-(princ (locate-library "eglot"))
+(message (locate-library "flymake"))
