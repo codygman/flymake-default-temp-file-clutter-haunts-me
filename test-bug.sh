@@ -1,5 +1,6 @@
 export HOME=$(pwd)
-nix-shell --pure emacs.nix --keep HOME --run "emacs --batch --eval='(load \"$HOME/init.el\")'"
+# nix-shell --pure emacs.nix --keep HOME --run "emacs --batch --eval='(load \"$HOME/init.el\")'"
+nix-shell --pure emacs.nix --keep HOME --run "emacs --eval='(load \"$HOME/init.el\")'"
 
 
 
